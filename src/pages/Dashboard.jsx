@@ -1,9 +1,12 @@
+//helpers functions
+import { fetchData } from "../helpers"
+
 //Loader
 export function dashboardLoader(){
-    
-}
+    const userName = fetchData("userName")
+    return {userName}
 
-import React from 'react'
+}
 
 export const Dashboard = () => {
   return (
